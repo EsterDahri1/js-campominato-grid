@@ -16,14 +16,26 @@ const playButton = document.querySelector('.generate');
 playButton.addEventListener('click', function(){
     
     //Creo la griglia 10x10
-    for (let i = 0; i < 100; i++) {
+    for (let i = 1; i <= 100; i++) {
         //creo il perimetro
         const createCell = document.createElement('div');
+        //metto i numeri nelle celle
+        createCell.append(i);
         //creo la cella
         createCell.className = 'cell';
-        //collego il div al contanitore
+        //collego il div al contenitore
         document.querySelector('.container').append(createCell);
+        
+        
+        createCell.addEventListener('click', function(){
+            //console.log('Type on cell');
+            createCell.classList.toggle('bg-purple')
+            console.log(i);
+        })
+        
+        
     }
 
+ 
 
 })
