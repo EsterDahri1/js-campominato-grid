@@ -15,6 +15,15 @@ const playButton = document.querySelector('.generate');
 //Aggiungo eventlistener al bottone per farlo funzionare
 playButton.addEventListener('click', function(){
     
+    //Creo la griglia 10x10
+    for (let i = 0; i < 100; i++) {
+        //creo il perimetro
+        const createCell = document.createElement('div');
+        //creo la cella
+        createCell.className = 'cell';
+        //collego il div al contanitore
+        document.querySelector('.container').append(createCell);
+    }
 
-    
+
 })

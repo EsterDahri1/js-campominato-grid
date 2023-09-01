@@ -5,7 +5,7 @@
 }
 
 body{
-    background-color: antiquewhite;
+    background-color: purple;
 }
 
 .container{
@@ -15,6 +15,11 @@ body{
 }
 
 /*Utilities*/
+
+.d-flex{
+    display: flex;
+    flex-wrap: wrap;
+}
 
 .text-center{
     text-align: center;
@@ -30,4 +35,11 @@ body{
 
 .p-2{
     padding: 2rem;
+}
+
+/*Main*/
+.cell{
+    border: 1px white solid;
+    width: calc(100%/10);
+    aspect-ratio: 1 / 1;
 }
