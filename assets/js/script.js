@@ -13,7 +13,7 @@ const playButton = document.querySelector('.generate');
 
 
 //Aggiungo eventlistener al bottone per farlo funzionare
-playButton.addEventListener('click', function(){
+playButton.addEventListener('click', function () {
     playButton.classList.toggle('d-none')
 
     //Creo la griglia 10x10
@@ -26,15 +26,14 @@ playButton.addEventListener('click', function(){
         createCell.className = 'cell';
         //collego il div al contenitore
         document.querySelector('.container').append(createCell);
-        
-        
-        createCell.addEventListener('click', function(){
+
+
+        createCell.addEventListener('click', function () {
             //console.log('Type on cell');
             createCell.classList.toggle('bg-purple')
             console.log(i);
         })
-        
-        
     }
-
 })
+   
+
