@@ -14,7 +14,8 @@ const playButton = document.querySelector('.generate');
 
 //Aggiungo eventlistener al bottone per farlo funzionare
 playButton.addEventListener('click', function(){
-    
+    playButton.classList.toggle('d-none')
+
     //Creo la griglia 10x10
     for (let i = 1; i <= 100; i++) {
         //creo il perimetro
@@ -35,7 +36,5 @@ playButton.addEventListener('click', function(){
         
         
     }
-
- 
 
 })

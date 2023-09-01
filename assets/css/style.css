@@ -21,6 +21,10 @@ body{
     flex-wrap: wrap;
 }
 
+.d-none{
+    display: none;
+}
+
 .text-center{
     text-align: center;
 }
@@ -29,12 +33,12 @@ body{
     margin-top: 2rem;
 }
 
-.p-05{
-    padding: 0.5rem;
+.ml-2{
+    margin-left: 2rem;
 }
 
-.p-2{
-    padding: 2rem;
+.p-05{
+    padding: 0.5rem;
 }
 
 .bg-purple{
@@ -43,7 +47,7 @@ body{
 
 /*Main*/
 .cell{
-    border: 1px white solid;
+    border: 2px white solid;
     width: calc(100%/10);
     aspect-ratio: 1 / 1;
     color: white;
