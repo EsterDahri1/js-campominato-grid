@@ -30,7 +30,7 @@ playButton.addEventListener('click', function () {
 
         createCell.addEventListener('click', function () {
             //console.log('Type on cell');
-            createCell.classList.toggle('bg-purple')
+            this.classList.toggle('bg-purple')
             console.log(i);
         })
     }
